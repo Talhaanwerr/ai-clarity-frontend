@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Calendar from './components/Calendar';
+import DashboardLayout from "./layout/DashboardLayout";
+import "../src/assets/scss/default.scss"
+import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <Calendar />
+      <DashboardLayout/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
