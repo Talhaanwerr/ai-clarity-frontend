@@ -2,8 +2,8 @@ import React from "react"
 import "./dashboard-layout.scss"
 import Calendar from "../components/calendar/Calendar";
 import Header from "../components/header/Header";
-import DashboardView from "../views/dashboard/DashboardView";
 import Footer from "../components/footer/Footer";
+import {Outlet} from 'react-router'
 
 const user = {
     name: 'Tom Cook',
@@ -37,7 +37,7 @@ export default function DashboardLLayout() {
                     <main>
                         <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
                             <div className="mt-2 flex items-center text-md text-white font-semibold">
-                                <DashboardView/>
+                                <Outlet/>
                             </div>
                         </div>
                     </main>

@@ -1,26 +1,15 @@
 import './App.css';
-import DashboardLayout from "./layout/DashboardLayout";
 import "../src/assets/scss/default.scss"
 import React from "react";
+import {BrowserRouter} from 'react-router-dom';
+import RouteConfig from "./navigation/RouteConfig";
 
 function App() {
   return (
     <div className="App">
-      <DashboardLayout/>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+        <BrowserRouter>
+            <RouteConfig/>
+        </BrowserRouter>
     </div>
   );
 }
